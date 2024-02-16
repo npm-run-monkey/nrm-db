@@ -28,10 +28,11 @@
   "dependencies": {
     "@nativewrappers/client": "latest",
     "@nativewrappers/fivem-server": "latest",
-    "@overextended/ox_lib": "latest"
+    "@overextended/ox_lib": "latest",
+    "@types/pg": "^8.11.0",
+    "pg": "^8.11.3"
   },
   "engines": {
     "node": ">=16.9.1"
   }
 }
-

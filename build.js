@@ -30,7 +30,7 @@ writeFileSync(
 
 writeFileSync(
   'fxmanifest.lua',
-  `fx_version 'cerulean'
+`fx_version 'cerulean'
 game 'gta5'
 
 dependencies {
@@ -38,7 +38,6 @@ dependencies {
     '/onesync',
 }
 
-client_script 'src/client/**/*.lua'
 server_script 'bin/server.js'
 
 `
