@@ -15,7 +15,7 @@ class _Pool {
         {
             if (await this.pool.connect())
             {
-                console.log(`[DB] - Succesfully established a connection to the database!`);
+                console.log(`[DB] - Succesfully established connection to the database!`);
             }
         }
         catch(e)
