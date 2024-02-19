@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { Pool } from "pg";
 
 class _Pool {
@@ -26,11 +27,11 @@ class _Pool {
 
     private createPool = (): Pool => {
         return new Pool({
-            host: "158.220.109.125",
-            port: 5432,
-            user: "root",
-            password: "pyjyulK1223pyjhXX",
-            database: "devserver"
+            host: process.env.PRIVATE_HOST,
+            port: Number(process.env.PRIVATE_PORT),
+            user: process.env.PRIVATE_USER,
+            password: process.env.PRIVATE_PASSWD,
+            database: process.env.PRIVATE_DATABASE
         });
     }
 }

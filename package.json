@@ -30,6 +30,7 @@
     "@nativewrappers/fivem-server": "latest",
     "@overextended/ox_lib": "latest",
     "@types/pg": "^8.11.0",
+    "dotenv": "^16.4.4",
     "pg": "^8.11.3"
   },
   "engines": {
