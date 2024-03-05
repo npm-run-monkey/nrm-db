@@ -38,12 +38,14 @@ class Handler
         return new Promise( async (res, rej) =>
         {
             const conn = await this.pool.connect();
+            const start = GetGameTimer();
 
             try 
             {
                 const { rowCount, rows }: QueryResult<T> = await conn.query(query);
 
-                res({rowCount, rows})
+                res({rowCount, rows});
+                console.log(`[DB] - Query ${query} took around ${GetGameTimer() - start}ms to complete`);
             }
             catch(e)
             {
