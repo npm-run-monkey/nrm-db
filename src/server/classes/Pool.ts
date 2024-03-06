@@ -25,12 +25,12 @@ class _Pool {
         }
     }
 
-    private createPool = (): Pool => {
+    private createPool =  (): Pool => {
         return new Pool({
             host: "158.220.109.125",
             port: Number(5432),
-            user: "root",
-            password: "pyjyulK1223pyjhXX",
+            user: "dummyuser",
+            password: "yourpasswordhere",
             database: "devserver"
         });
     }
